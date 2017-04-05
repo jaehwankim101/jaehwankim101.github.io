@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://unpkg.com/simplebar@2.1.0/dist/simplebar.css" />
 <script src="https://unpkg.com/simplebar@2.1.0/dist/simplebar.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"
+  integrity="sha256-0vBSIAi/8FxkNOSKyPEfdGQzFDak1dlqFKBYqBp1yC4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body class="w3-black">
@@ -17,7 +23,7 @@
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav data-simplebar class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="meee.JPG" style="width:100%">
+  <img src="me2.JPG" style="width:100%">
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -55,27 +61,27 @@
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo" ><span class="w3-hide-small"></span> Donovan Kim-Adams</h1>
-    <p>Full Stack Web Developer</p>
+    <h1 class="w3-jumbo about"  ><span class="w3-hide-small"></span> Donovan Kim-Adams</h1>
+    <p class="about">Full Stack Web Developer</p>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
+    <h2 class="w3-text-light-grey about2">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Welcome and thanks for visiting! I'm a Full Stack Developer and I just love to get my hands dirty with good code! Whether its playign with new JS plugins, the Latest CSS libraries, or just messing around on the Back-end, I'm all about learning and applying new skills. In my free time I'm pretty active in the music scene at UCSD, and I'm dipping my toes into modern dance. Long drives near the coast and new restaurants really get me excited!
+    <p class="about2">Welcome and thanks for visiting! I'm a Full Stack Developer and I just love to get my hands dirty with good code! Whether its playign with new JS plugins, the Latest CSS libraries, or just messing around on the Back-end, I'm all about learning and applying new skills. In my free time I'm pretty active in the music scene at UCSD, and I'm dipping my toes into modern dance. Long drives near the coast and new restaurants really get me excited!
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">HTML/CSS</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <p class="w3-wide skill">HTML/CSS</p>
+    <div class="w3-white skill">
+      <div class="w3-dark-grey skill" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Javascript</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    <p class="w3-wide skill">Javascript</p>
+    <div class="w3-white skill">
+      <div class="w3-dark-grey skill" style="height:28px;width:90%"></div>
     </div>
-    <p class="w3-wide">Back-End Technologies</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    <p class="w3-wide skill">Back-End Technologies</p>
+    <div class="w3-white skill">
+      <div class="w3-dark-grey skill" style="height:28px;width:85%"></div>
     </div><br>
 
     <a class="linkremove" href="resume.pdf"><button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -86,7 +92,7 @@
     <h3 class="w3-padding-16 w3-text-light-grey">Skills and Frameworks</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">HTML/CSS</li>
           <li class="w3-padding-16">Web Design</li>
           <li class="w3-padding-16">Bootstrap</li>
@@ -98,7 +104,7 @@
       </div>
 
       <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Javascript</li>
             <li class="w3-padding-16">JQuery</li>
             <li class="w3-padding-16">Angular.js</li>
@@ -110,7 +116,7 @@
 
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
             <li class="w3-dark-grey w3-xlarge w3-padding-32">PHP</li>
             <li class="w3-padding-16">Laravel</li>
             <li class="w3-padding-16">Wordpress</li>
@@ -120,7 +126,7 @@
         </div>
 
         <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
             <li class="w3-dark-grey w3-xlarge w3-padding-32">SQL</li>
             <li class="w3-padding-16">MySQL</li>
             <li class="w3-padding-16">ProgreSQL</li>
@@ -133,7 +139,7 @@
 
         <div class="w3-row-padding" style="margin:16px -16px">
           <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
               <li class="w3-dark-grey w3-xlarge w3-padding-32">Java</li>
               <li class="w3-padding-16">Android</li>
               <li class="w3-padding-16">JDBC</li>
@@ -144,7 +150,7 @@
           </div>
 
           <div class="w3-half">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off skill">
               <li class="w3-dark-grey w3-xlarge w3-padding-32">In Progress</li>
               <li class="w3-padding-16">Python and Flask</li>
               <li class="w3-padding-16">C#</li>

@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://unpkg.com/simplebar@2.1.0/dist/simplebar.css" />
 <script src="https://unpkg.com/simplebar@2.1.0/dist/simplebar.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"
+  integrity="sha256-0vBSIAi/8FxkNOSKyPEfdGQzFDak1dlqFKBYqBp1yC4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body class="w3-black">
@@ -17,7 +23,7 @@
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav data-simplebar class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="meee.JPG" style="width:100%">
+  <img src="me2.JPG" style="width:100%">
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -66,7 +72,7 @@
     </div><br>
     <p>Let's do some work together:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form method="POST" action="contact-form-handler.php" name="contactform" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
