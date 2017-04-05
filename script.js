@@ -1,11 +1,7 @@
 $(document).ready(function(){
     /**js for the index page**/
-        $("#name").hide();
-        $("#myPic").hide();
-        $("#port").hide();
-        $("#name").fadeIn(4000);
-        $("#myPic").fadeIn(4000);
-        $("#port").fadeIn(4000);
+        $(".hide").hide();
+        $(".hide").fadeIn(4000);
         /** Js for the about page**/
         $(".about").effect("slide",1000);
         $(".about2").hide();
